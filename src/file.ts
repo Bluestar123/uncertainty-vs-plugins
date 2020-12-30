@@ -13,7 +13,7 @@ const { regeneratorRuntime } = global
 
 class ${name.charAt(0).toUpperCase() + name.slice(1)} extends wekf.WePage {
 	data = {
-
+		
 	}
 }
 wekf.createPage(${name.charAt(0).toUpperCase() + name.slice(1)})
