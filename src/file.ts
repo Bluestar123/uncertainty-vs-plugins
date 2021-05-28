@@ -8,8 +8,7 @@ exports.files = function (name: string) {
 	const page = {
 		js:
 `
-import wekf from "@tencent/kakashi-wekf";
-const { regeneratorRuntime } = global
+import wekf from "@tencent/kakashi-wekf"
 
 class ${name.charAt(0).toUpperCase() + name.slice(1)} extends wekf.WePage {
 	data = {
@@ -20,6 +19,7 @@ wekf.createPage(${name.charAt(0).toUpperCase() + name.slice(1)})
 `,
 wxss: `/**${name}.wxss**/`,
 json: `{
+	"navigationBarTitleText": "",
   "usingComponents": {}
 }`,
 wxml: `<!--${name}.wxml-->

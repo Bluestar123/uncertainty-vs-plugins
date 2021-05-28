@@ -47,7 +47,7 @@ function addPathToJSON(url: string, dir: string) {
 
       if (pkgName) {
         // 有分包
-        let subPackages = content.subPackages || [];
+        let subPackages = content.subpackages || [];
         let i = subPackages.findIndex((item: PackageProp) => {
           return item.root === pkgName;
         });
